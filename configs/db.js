@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
-
+console.log(`${process.env.MONGO_CONNECTION_STRING}`);
 async function connection() {
     await mongoose
         .connect(
-            `${process.env.DB_ROOT}://${process.env.DB_HOST}/${process.env.DB_NAME}`
+            // `mongodb://${process.env.DB_USER}:${process.env.DB_PASSWORD}/${process.env.DB_NAME}`
+            `${process.env.MONGO_CONNECTION_STRING}`
         )
         .then(() => {
             //in case of successful connection

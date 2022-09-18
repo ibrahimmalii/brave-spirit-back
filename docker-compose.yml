@@ -1,0 +1,20 @@
+version: '3'
+services:
+  my-mongoDB:
+    image: mongo:latest
+    environment:
+       MONGO_USERNAME: root
+       MONGO_PASSWORD: password
+    ports:
+      - 27017:27017
+    volumes:
+      - db-data:/data/db
+      - mongo-config:/data/configdb
+
+volumes:
+  db-data:
+  mongo-config:
+
+#volumes:
+#  local-mysql:
+#    driver: local
