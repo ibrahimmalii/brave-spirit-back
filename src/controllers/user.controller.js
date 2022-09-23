@@ -512,7 +512,7 @@ module.exports = {
     },
     getProfileImage: async (req, res) => {
         try {
-            const user = await User.findOne(
+            User.findOne(
                 {
                     _id: req.params.id,
                     active: true,
