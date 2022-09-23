@@ -13,7 +13,7 @@ module.exports = {
                         });
                         break;
                     } else
-                        res.status(400).json({
+                        return res.status(400).json({
                             message: error,
                         });
                 }

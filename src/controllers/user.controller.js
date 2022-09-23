@@ -512,7 +512,7 @@ module.exports = {
     },
     getProfileImage: async (req, res) => {
         try {
-            User.findOne(
+            const user = await User.findOne(
                 {
                     _id: req.params.id,
                     active: true,
@@ -520,13 +520,9 @@ module.exports = {
                 },
                 { _id: 0 },
                 async (error, user) => {
-                    if (error) {
-                        await errorHandler(req, res, error);
-                    }
+                    if (error) return errorHandler(req, res, error);
                     if (!user) {
-                        return res
-                            .status(404)
-                            .json({ error: "User not found" });
+                        res.status(404).json({ error: "User not found" });
                     }
                     return res.sendFile(
                         path.join(
@@ -539,6 +535,8 @@ module.exports = {
                             }
                         }
                     );
+
+
                 }
             );
         } catch (error) {}
