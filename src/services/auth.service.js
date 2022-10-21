@@ -33,7 +33,7 @@ module.exports = {
                 user,
             },
             process.env.JWT_KEY,
-            { expiresIn: "1800s" }
+            // { expiresIn: "1800s" }
         );
         const refreshtoken = jwt.sign(
             {
@@ -61,7 +61,7 @@ module.exports = {
             },
             process.env.JWT_RESET_PASS,
             {
-                expiresIn: "1h",
+                // expiresIn: "1h",
             }
         );
         return {
@@ -81,7 +81,7 @@ module.exports = {
                 user,
             },
             process.env.JWT_KEY,
-            { expiresIn: "1800s" }
+            // { expiresIn: "1800s" }
         );
         return jsontoken;
     },

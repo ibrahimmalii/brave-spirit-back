@@ -12,14 +12,14 @@ module.exports = {
     getUsers: async (req, res) => {
         try {
             let { size, page } = req.query;
-            size = size != null ? +req.query.size : 1;
+            size = size  ? +req.query.size : 1;
             User.find(
                 // { active: true },
                 {},
                 { password: 0, refreshtoken: 0 },
                 {
-                    skip: (page != null ? page - 1 : 0) * size,
-                    limit: size,
+                    skip: (page  ? page - 1 : 0) * size,
+                    // limit: size,
                     sort: {
                         createdAt: 1,
                     },

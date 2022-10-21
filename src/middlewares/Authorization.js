@@ -5,6 +5,7 @@ const { errorHandler } = require("../services/errorHandler");
 
 module.exports = {
     checkToken: async (req, res, next) => {
+        console.log("Checking");
         try {
             let token = req.get("authorization");
             if (token) {
@@ -37,6 +38,7 @@ module.exports = {
         }
     },
     isAdmin: async (req, res, next) => {
+        console.log("isAdmin");
         try {
             if (req.decode) {
                 Admin.findOne({ _id: req.decode._id }, async (error, admin) => {
