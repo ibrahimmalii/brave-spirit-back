@@ -19,7 +19,7 @@ module.exports = {
                 { password: 0, refreshtoken: 0 },
                 {
                     skip: (page  ? page - 1 : 0) * size,
-                    // limit: size,
+                    limit: size,
                     sort: {
                         createdAt: 1,
                     },
@@ -527,7 +527,7 @@ module.exports = {
                     return res.sendFile(
                         path.join(
                             __dirname,
-                            `../../public/users/${user.image}`
+                            `../../public/users/${user?.image}`
                         ),
                         (error) => {
                             if (error) {

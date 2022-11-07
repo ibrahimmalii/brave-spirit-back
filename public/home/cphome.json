@@ -1,0 +1,634 @@
+{
+    "banner": {
+        "ar": {
+            "title": "أحصل على دعم نفسي شامل وتمتع بشعور أفضل",
+            "description": "<p>دورات تطبيقية لكي تتغلب على مخاوفك\nوتنهي معاناتك النفسية.<br></p>",
+            "image": "banner/لافتة.jpg",
+            "alt_image": "لافتة"
+        },
+        "en": {
+            "title": "test",
+            "description": null,
+            "image": "banner/banner.jpg",
+            "alt_image": "banner"
+        }
+    },
+    "advices": {
+        "ar": [
+            {
+                "name": "تحرر من قلقك و كلاكيعك النفسية",
+                "image": "advice/نصيحة_0.png",
+                "alt_image": "نصيحة_0"
+            },
+            {
+                "name": "عش حياتك بشكل طبيعي",
+                "image": "advice/نصيحة_2.png",
+                "alt_image": "نصيحة_2"
+            },
+            {
+                "name": "سرع من تعافيك",
+                "image": "advice/نصيحة_1651811364241.png",
+                "alt_image": "نصيحة_1651811364241"
+            }
+        ],
+        "en": [
+            {
+                "name": "1",
+                "image": "advice/advice_0.png",
+                "alt_image": "advice_0"
+            },
+            {
+                "name": "2",
+                "image": "advice/advice_2.png",
+                "alt_image": "advice_2"
+            },
+            {
+                "name": "3",
+                "image": "advice/advice_1651811364241.png",
+                "alt_image": "advice_1651811364241"
+            }
+        ]
+    },
+    "problem": {
+        "ar": {
+            "title": "المشكلة هو ان الوقت لوحده لن يجعلك تتعافى !",
+            "description": "<div style=\"text-align: right;\"><font color=\"#000000\" face=\"Proxima Nova, sans-serif\"><span style=\"font-size: 16px; white-space: pre-wrap;\">و ما يزيد الامور صعوبة هو ان :</span><br></font></div><div style=\"text-align: right;\"><font color=\"#000000\" face=\"Proxima Nova, sans-serif\"><span style=\"font-size: 16px; white-space: pre-wrap;\"><br></span></font></div><ol style=\"font-family: Roboto, &quot;Segoe UI&quot;, GeezaPro, &quot;DejaVu Serif&quot;, sans-serif, -apple-system, BlinkMacSystemFont; padding-inline-start: 48px;\"><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">العلاج باهض و مكلف&nbsp;.</span></p></li><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">لا يوجد استشاريين أكفاء في منطقتك .</span></p></li><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">المخاوف تشلك والمعاناة تلازمك دائما&nbsp;.</span></p></li><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"background-color: transparent; font-size: 12pt; white-space: pre-wrap; text-align: inherit;\">جربت علاجات سابقا بدون فائدة (جربت كل شيئ و لم ينفع شيئ ؟)  .</span></p></li><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"font-size: 12pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;\">  حالتك النفسية تتأزم كل يوم نحو الاسوء و الشعور بانك عالق في دوامة .</span></p></li><li dir=\"rtl\" aria-level=\"1\" style=\"list-style-type: disc; font-size: 12pt; font-family: &quot;Proxima Nova&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre;\"><p dir=\"rtl\" role=\"presentation\" style=\"margin-top: 0pt; margin-bottom: 0pt; line-height: 1.8; text-align: right;\"><span style=\"background-color: transparent; font-size: 12pt; white-space: pre-wrap;\">و كل هذا محبط و يمكن ان يشعرك بأن وضعك ميؤوس منه .</span><br></p></li></ol>",
+            "image": "problem/مشكلة.png",
+            "alt_image": "مشكلة"
+        },
+        "en": {
+            "title": "the bad news is that time alone won't heal you",
+            "description": "<p>﻿﻿Your mental state will worsen even more if you do not get adequate treatment over time. The additional&nbsp;<span style=\"color: rgb(255, 0, 0); text-decoration: inherit;\">problem&nbsp;</span>that you will face when looking for treatment is that:&nbsp;</p><ul><li style=\"text-align: left;\">Treatment is expensive and expensive&nbsp;</li><li style=\"text-align: left;\">There are no qualified counselors who understand your struggles in your area&nbsp;</li><li style=\"text-align: left;\">You have previously tried treatments without benefit and that is why you feel stuck&nbsp;</li><li style=\"text-align: left;\">Feeling frustrated and hopeless because fears haunt you and are always attached to you&nbsp;</li><li style=\"text-align: left;\"><span style=\"font-weight: 700;\">Anxiety and fear is like a vortex of quicksand that the more you try to rid yourself of it, the more you sink in it and the more difficult it will be to free yourself</span></li></ul>",
+            "image": "problem/problem.png",
+            "alt_image": "problem"
+        }
+    },
+    "solutions": {
+        "ar": {
+            "title": "ليس عليك تخدير المعاناة بالأدوية لأن الحل موجود",
+            "descriptions": [
+                {
+                    "description": "• تخلص من نوبات الهلع / القلق و الاكتئاب",
+                    "image": "solution/حل_0.png",
+                    "alt_image": "حل_0"
+                },
+                {
+                    "description": "• ضع حد للصراع النفسي ،استرجع سلامك الداخلي ",
+                    "image": "solution/حل_1.png",
+                    "alt_image": "حل_1"
+                },
+                {
+                    "description": "• استشعر احساس الأمان و الطمأنينة المفقودة ",
+                    "image": "solution/حل_2.png",
+                    "alt_image": "حل_2"
+                },
+                {
+                    "description": "• تعلم اساسيات العلاج الذاتي من مصدر موثوق",
+                    "image": "solution/حل_1650980737939.png",
+                    "alt_image": "حل_1650980737939"
+                },
+                {
+                    "description": " • عش حياتك بشكل طبيعي ",
+                    "image": "solution/حل_1650980764094.png",
+                    "alt_image": "حل_1650980764094"
+                },
+                {
+                    "description": "• استعد حريتك من عبودية الخوف ",
+                    "image": "solution/حل_1650980898850.png",
+                    "alt_image": "حل_1650980898850"
+                },
+                {
+                    "description": "• واجه العالم و الناس بشجاعة ",
+                    "image": "solution/حل_1650980909465.png",
+                    "alt_image": "حل_1650980909465"
+                },
+                {
+                    "description": "• اسمح للراحة النفسية ان تعم حياتك ",
+                    "image": "solution/حل_1650981016998.png",
+                    "alt_image": "حل_1650981016998"
+                },
+                {
+                    "description": "• استعد ثقتك بنفسك ",
+                    "image": "solution/حل_1650981123023.png",
+                    "alt_image": "حل_1650981123023"
+                }
+            ]
+        },
+        "en": {
+            "title": "",
+            "descriptions": [
+                {
+                    "description": "title",
+                    "image": "solution/solution_0.png",
+                    "alt_image": "solution_0"
+                },
+                {
+                    "description": "title",
+                    "image": "solution/solution_1.png",
+                    "alt_image": "solution_1"
+                },
+                {
+                    "description": "title",
+                    "image": "solution/solution_2.png",
+                    "alt_image": "solution_2"
+                },
+                {
+                    "description": "1",
+                    "image": "solution/solution_1650980737939.png",
+                    "alt_image": "solution_1650980737939"
+                },
+                {
+                    "description": "2",
+                    "image": "solution/solution_1650980764094.png",
+                    "alt_image": "solution_1650980764094"
+                },
+                {
+                    "description": "2",
+                    "image": "solution/solution_1650980898850.png",
+                    "alt_image": "solution_1650980898850"
+                },
+                {
+                    "description": "2",
+                    "image": "solution/solution_1650980909465.png",
+                    "alt_image": "solution_1650980909465"
+                },
+                {
+                    "description": "2",
+                    "image": "solution/solution_1650981016998.png",
+                    "alt_image": "solution_1650981016998"
+                },
+                {
+                    "description": "2",
+                    "image": "solution/solution_1650981123023.png",
+                    "alt_image": "solution_1650981123023"
+                }
+            ]
+        }
+    },
+    "companies": {
+        "ar": [
+            {
+                "name": "20 مليون مشاهدة",
+                "image": "company/شركة_0.png",
+                "alt_image": "شركة_0"
+            },
+            {
+                "name": "بي بي سي",
+                "image": "company/شركة_1.png",
+                "alt_image": "شركة_1"
+            },
+            {
+                "name": "قناة الشروق",
+                "image": "company/شركة_2.png",
+                "alt_image": "شركة_2"
+            }
+        ],
+        "en": [
+            {
+                "name": "youtube",
+                "image": "company/company_0.png",
+                "alt_image": "company_0"
+            },
+            {
+                "name": "BBC",
+                "image": "company/company_1.png",
+                "alt_image": "company_1"
+            },
+            {
+                "name": "El-Chourouk",
+                "image": "company/company_2.png",
+                "alt_image": "company_2"
+            }
+        ]
+    },
+    "recommendations": {
+        "ar": [
+            {
+                "name": "هنده محمد\nرائدة التدريب في الوطن العربي و مؤسسة موقع هندة سبيس",
+                "saying": "\" حسابه كثير مفيد و يشهد له الكثيرين ، عنده فيديوات مجانية بالعشرات تتكلم عن الناس اللي يعانو من الرهاب الاجتماعي، القلق و الاكتئاب.. تابعو محمد نجمو هو من الاشخاص اللي انا ممتنة لهم  لانهم يساهمون بشكل كبير انهم يوصلون لهذي الفئة بالذات .. احس بانه من المسؤولية اني اعطيكم حسابه\"",
+                "image": "recommendation/توصية_0.png",
+                "alt_image": "توصية_0"
+            },
+            {
+                "name": "إكرام بيلانوفا\nالمؤثرة و صاحبة الشعبية الجارفة في المغرب العربي",
+                "saying": "\"شفائي لك فضل كبير وراءه ، لقد كنت معلمي ومساندي وراء شاشة الهاتف في فترات كانت جدا صعبة ، احييك واحترمك كثيرا لانك فعلا تستحق .. وفقك الله ورعاك واستمر يا اخي لانك ستنقذ ناس كثيرة\"",
+                "image": "recommendation/توصية_1.png",
+                "alt_image": "توصية_1"
+            },
+            {
+                "name": "د.حسين والي\nإستشاري الصحة النفسية والطاقة الحيوية",
+                "saying": "\"محمد نجمو شاب رائع عرفته وكانت لديه العديد من المشكلات النفسية والجسدية وقد لاحظت انه يبحث بصدق للخروج للشفاء والبحث بشغف ، بوعى وحب رغم انف ما مر به والأن اجده قد تطورت حياته بشكل رائع ومبهج واصبحت الأن انصح العديد من الناس بمتابعته والتعلم منه\"",
+                "image": "recommendation/توصية_2.jpg",
+                "alt_image": "توصية_2"
+            },
+            {
+                "name": "أمل جميل سباع\nأخصائية تربية خاصة و استشارية أسرية ، مؤسسة مركز أمل جميل للاستشارات ",
+                "saying": "\"تم تشخيصي بالاكتئاب الحاد الذي زاد مع مرحلة حملي بطفلي وبعد الولادة تفاقم الأمر .. بدأت بالعلاج الدوائي وزادت حالتي سوء وبدأت عندي نوبات هلع قوية جدا من هنا شعرت باني سافقد حياتي وبدأت بالبحث وسبحان الله لقيت مقاطع محمد نجمو في اليوتيوب سنة 2018 كانت كل هالمعلومات نور في طريقي المظلم .. التزمت بالعلاج الغذائي ، والمعلومات اللي في مقاطعه بما فيها الاستحمام بالماء البارد واتبعت جلسات العلاج المعرفي السلوكي والرياضة.. اليوم أنا تشافيت تماما ولا اتردد للحظة ان أنصح كل شخص جاهز لمساعدة نفسه ان يتابع قناته ، محمد نجمو إنسان صادق صاحب تجربة وعلم ..\"",
+                "image": "recommendation/توصية_4.png",
+                "alt_image": "توصية_4"
+            }
+        ],
+        "en": [
+            {
+                "name": "هنده محمد",
+                "saying": "",
+                "image": "recommendation/recommendation_0.png",
+                "alt_image": "recommendation_0"
+            },
+            {
+                "name": "إكرام بيلانوفا",
+                "saying": "محمد نجمو هو رائد ويعلم جيدا كيف يساعد غيره",
+                "image": "recommendation/recommendation_1.png",
+                "alt_image": "recommendation_1"
+            },
+            {
+                "name": "د.حسين والي",
+                "saying": "\"انصح بمتابعته ، شاب رائع تطورت حياته سريعا ليصبح اكثر صحة و نشاط و وعي حفظه الرحمن من كل سوءو طوي الارض و من عليها لخدمته\"",
+                "image": "recommendation/recommendation_2.jpg",
+                "alt_image": "recommendation_2"
+            },
+            {
+                "name": "SAYING",
+                "saying": "saying",
+                "image": "recommendation/recommendation_4.png",
+                "alt_image": "recommendation_4"
+            }
+        ]
+    },
+    "about": {
+        "ar": {
+            "description": "<p>لما يقرب 9 سنوات و انا اتجرع كوكتيل نفسي مر متكون من : نوبات الهلع الحادة ، الرهاب الاجتماعي ، الاغورافوبيا ، الاكتئاب ، العار السام ، القلق العام .. كنت مشلول و في حالة اعاقة نفسية لدرجة اني كنت اخاف حتى الخروج من البيت ..&nbsp; لم اكن استطيع ان اتخيل باني رح اتحرر يوما ما من كل ذلك العذاب ، في الحقيقة مجرد تفكيري في الشفاء كان يصيبني بالمزيد من الخوف ! مازاد الامور سوءا هو الامراض الجسدية التي اصابتني مثل القولون العصبي ، الحرقة في المعدة ، الربو ، حساسية الجلد و حب الشباب ..<span style=\"background-color: unset; text-align: inherit;\">كنت اتناول 10 انواع من الادوية بما فيها العقاقير النفسية و لم اكن اعرف بان مرضي الجسدي و النفسي متعلق بالصدمات التي تعرضت لها في الطفولة ..</span></p><p>&nbsp;اشتدت معاناتي و دعوت الله بصدق و قطعت عليه وعدا اني اذا حققت التعافي فانا سأكرس حياتي لمساعدة المصابين مثلي !</p><p>&nbsp;انا ممتن لان دعوتي اجيبت ، فلم اتحرر من نوبات الهلع بشكل نهائي فقط و انما رسمت الطريق لعشرات الآلاف من المصابين في كل انحاء العالم و ساعدتهم على استعادة عافيتهم النفسية و حياتهم الطبيعية من جديد ..&nbsp;<span style=\"background-color: unset; text-align: inherit;\">انشأت مكتبة رقمية فيها اكثر من 400 فيديو تعليمي مجاني على يوتيوب تعتبر كمرجع يزوره كل من يحتاج المساعدة النفسية ، اجمالي عدد المشتركين في القناة تعدى 21500 روح شجاعة&nbsp; &nbsp;،و ما يقرب من 20 مليون مشاهدة !</span></p><p><span style=\"background-color: unset; text-align: inherit;\"><br></span></p><p><span style=\"background-color: unset; text-align: inherit;\">&nbsp;سر نجاحي في التخفيف من معاناة المصابين هو اني دمجت بين تجربتي الشخصية مع المشاكل النفسية + حصولي على تدريب رسمي في اقوى المناهج العلاجية مثل :&nbsp;</span></p><p style=\"text-align: center;\">CBT , the Flash technique , EMDR&nbsp;</p><p style=\"text-align: right;\"><span style=\"background-color: unset; text-align: inherit;\">مع اهم خبراء العلاج النفسي في العالم مثل&nbsp; السايكولوجيست :</span></p><p style=\"text-align: center;\"><span style=\"background-color: unset; text-align: inherit;\">&nbsp; Ricky Greenwald •</span></p><p style=\"text-align: center;\"><span style=\"background-color: unset; text-align: inherit;\">&nbsp;Dr.Philip Manfield •&nbsp;</span></p><p style=\"text-align: center;\"><span style=\"background-color: unset; text-align: inherit;\">Judith S. Beck •&nbsp;</span></p><p><span style=\"background-color: unset; text-align: inherit;\">و مهمتي هي ان اساعد الناس مثلك على انهاء معاناتهم و الاحساس بشعور افضل تجاه ذواتهم .. انت كذلك ، ليس عليك ان تعاني في صمت بعد الان ، انت في المكان المناسب و هذا ما يمكننا تحقيقه معا :</span></p><p><span style=\"background-color: unset; text-align: inherit;\"><br></span></p>",
+            "zipped_description": "<p>لما يقرب 9 سنوات و انا اتجرع كوكتيل نفسي مر متكون من : نوبات الهلع الحادة ، الرهاب الاجتماعي ، الاغورافوبيا ، الاكتئاب ، العار السام ، القلق العام ..&nbsp;<span style=\"background-color: unset; text-align: inherit;\">&nbsp;</span><span style=\"background-color: unset; text-align: inherit;\">مازاد الامور سوءا هو الامراض الجسدية التي عانيت منها مثل القولون العصبي ، الحرقة في المعدة ، الربو ، حساسية الجلد و حب الشباب .. كنت اتناول 10 انواع من الادوية بما فيها العقاقير النفسية و لم اكن اعرف بان مرضي الجسدي و النفسي متعلق بالصدمات التي تعرضت لها في الطفولة ..</span></p><p>اشتدت معاناتي و دعوت الله بصدق و قطعت عليه وعدا اني اذا حققت التعافي فانا سأكرس حياتي لمساعدة المصابين مثلي ! انا ممتن لان دعوتي اجيبت ، فلم اتحرر من نوبات الهلع بشكل نهائي فقط<span style=\"background-color: unset; text-align: inherit;\"><br></span></p>",
+            "image": "about/حول.jpg",
+            "alt_image": "حول"
+        },
+        "en": {
+            "description": "<p>desc</p>",
+            "zipped_description": "<p>zipped desc</p>",
+            "image": "about/about.jpg",
+            "alt_image": "about"
+        }
+    },
+    "steps": {
+        "ar": {
+            "title": "اما انك تسعى نحو التعافي او انك تسعى نحو المزيد من المعاناة لا اراديا",
+            "descriptions": [
+                {
+                    "description": "اختر دورتك المناسبة ",
+                    "image": "step/خطوة_0.png",
+                    "alt_image": "خطوة_0"
+                },
+                {
+                    "description": "اشترك وابدأ في معالجة مشكلتك النفسية فورا",
+                    "image": "step/خطوة_1.png",
+                    "alt_image": "خطوة_1"
+                },
+                {
+                    "description": "تحرر من مشكلتك النفسية بطريقة آمنة و فعالة ",
+                    "image": "step/خطوة_2.png",
+                    "alt_image": "خطوة_2"
+                }
+            ]
+        },
+        "en": {
+            "title": "",
+            "descriptions": [
+                {
+                    "description": "اختر دورتك المدفوعة المناسبة المناسبة",
+                    "image": "step/step_0.png",
+                    "alt_image": "step_0"
+                },
+                {
+                    "description": "اشترك  لتتعلم العلاج النفسي الذاتي",
+                    "image": "step/step_1.png",
+                    "alt_image": "step_1"
+                },
+                {
+                    "description": "تحرر من مشاكلك النفسية بدون ادوية او استشارات باهضة",
+                    "image": "step/step_2.png",
+                    "alt_image": "step_2"
+                }
+            ]
+        }
+    },
+    "guaranties": {
+        "ar": [
+            {
+                "title": "استرجاع الاموال ",
+                "description": "اذا لم تكن راضي 100% على المنتج الذي اشتريته  ، فلديك 60 يوم حتى تطلب استعادة المبلغ ، سنعطيك مالك و تبقى الدورة لك ! ",
+                "image": "garanty/ضمان_2.png",
+                "alt_image": "ضمان_2"
+            },
+            {
+                "title": "الفعالية القصوى للعلاج",
+                "description": "كل دورة هي تجميعة شاملة (لمعلومات ، تعاليم ، قصص تشافي ، دراسات ، ابحاث و تمارين) تم أخذها من مصادر علمية موثوقة و تأكدنا من صحتها و فعاليتها قبل ان نعرضها عليك على شكل برنامج علاجي .",
+                "image": "garanty/ضمان_1651169466354.png",
+                "alt_image": "ضمان_1651169466354"
+            },
+            {
+                "title": "مرونة الأسعار",
+                "description": "بعض دوراتنا توفر خدمة (طلب اعانة مالية) حتى يتسنى للمصابين الفقراء الحصول عليها بشكل مجاني .\nكل دورة تدفع ثمنها فأنت تدعمنا و تشجعنا ان نوفر المزيد من الدورات للمصابين العاجزين عن الدفع و بهذا يستفيد الجميع .",
+                "image": "garanty/ضمان_1651169869934.png",
+                "alt_image": "ضمان_1651169869934"
+            }
+        ],
+        "en": [
+            {
+                "title": "استرجاع الاموال",
+                "description": "",
+                "image": "garanty/garanty_2.png",
+                "alt_image": "garanty_2"
+            },
+            {
+                "title": "2",
+                "description": "2",
+                "image": "garanty/garanty_1651169466354.png",
+                "alt_image": "garanty_1651169466354"
+            },
+            {
+                "title": "3",
+                "description": "3",
+                "image": "garanty/garanty_1651169869934.png",
+                "alt_image": "garanty_1651169869934"
+            }
+        ]
+    },
+    "testimonials": {
+        "ar": [
+            {
+                "name": "مؤيد\nصاحب محطة بنزين في الولايات المتحدة الامريكية",
+                "saying": " حياتي كانت مليئة بالأفكار المغلوطة والمخيفة التي لا تنتهي و التي تؤدي إلى نوبات الهلع واختلال الانية وغيرها ، حالتي بعد الاستشارات مع نجمو تغيرت حرفيا دراماتيكا .. بعد شهر ونص أصبحت شخص آخر وشعرت اني أولد من جديد .. والان اعيش اجمل لحظات حياتي وقمت بعمل مشروعي الخاص  .. لا أود ان اتخيل حياتي كما كانت في السابق لانها بصراحة مثل الجحيم !\nمحمد صريح وصادق وعاش نفس التجربة و يعرف ما نمر به .",
+                "image": "testimonial/شهادة_0.jpg",
+                "alt_image": "شهادة_0"
+            },
+            {
+                "name": "فلة مزاري\nاعلامية ٫ حاصلة على المرتبة الاولى في مسابقة رئاسة الجمهورية الجزائرية  للصحفي المحترف 2016",
+                "saying": "الامر كان يشبه النفق المظلم او الحفرة العميقة جدا ، و كأني احمل حقيبة ظهر فيها عار ، ذنب، غضب، سخط،كره، رغبة في الانتقام والشعور انني نكرة غير مفيدة و وحيدة  , كنت اتعامل بصرامة شديدة مع كل شئ ، امنع نفسي من الخطأ واعاقب نفسي و الامر الذي زاد الوضع  تأزما هو اشتراكي في عدد من دورات المدربيين المشهورين عربيا و مراجعة أخصايين كثر .. دون ذكر عدد الكتب و الفيدوهات التي اتابعها  ايضا لكن لا نتائج حقيقية  تذكر فقط كأني اضع كمادات على جراح تزداد تعفنا .. \nكنت بحاجة الى احد يصدق حقيقة انني اعاني ولا يعطيني حلول ترقيعية وسطحية .\n\n بعد فترة قررت اخذ حصص مع  نجمو  ،  كنت سعيدة لاني وجدت  معالجا يمكنني الوثوق فيه و الاعتماد عليه .. اما فكرة التعامل مع الأجزاء الداخلية كانت أشبه بتعلم السحر  جعلت حقيبة الظهر تلك تبدو أقل ثقلا.. بعد كل جلسة أشعر بالخفة ،و تعلمت منه احترام التدرج في العلاج وعدم العجلة و تفادي تسريع التشافي الذي قد يفتح ملفات انا غير جاهزة لها .. لو لم احصل على مساعدته كنت ساكون عالقة في ذلك النفق  مستمرة في اضاعة الكثير من الوقت والمال لدى مدربين اخرين  مع فقدان الثقة في امكانية تحسن وضعي النفسي ...لكنت مستمرة في كره  وجلد ذاتي .",
+                "image": "testimonial/شهادة_1.png",
+                "alt_image": "شهادة_1"
+            },
+            {
+                "name": "خلود\nطبيبة أسنان",
+                "saying": "كنت اعاني من خوف شديد من التحدث امام الجمهور  ،  كنت ابقى افكر لساعات طويله قبل يوم الالقاء وحتى مع التدريب المكثف تاتيني دقات قلب سريعه ورجفه في الصوت و تشتت في المعلومات و هذا الشي مشكله كبيره بالنسبه لي لان دراستي ومجالي يعتمد بشكل كبير على الألقاء !\nبعد الجلسات مع نجمو الحمدلله اصبحت اكثر ثقه في نفسي ، وفي اخر القاء لي كنت انظر الى الموجودين في القاعه بعكس ما كنت عليه عندما كنت اتجنب النظر اليهم لاني كنت اشعر بتوتر كبير ،كما اني لم اشعر برجفة في قلبي وساقي كالعاده ..\n\nبالطبع لو لم احصل على المساعده لكنت بقيت في نفس الوضع الخائف والمتوتر كان احساسي سئ جدا لاني كنت افقد القدره على السيطره .",
+                "image": "testimonial/شهادة_2.jpg",
+                "alt_image": "شهادة_2"
+            }
+        ],
+        "en": [
+            {
+                "name": "azer",
+                "saying": "azert",
+                "image": "testimonial/testimonial_0.jpg",
+                "alt_image": "testimonial_0"
+            },
+            {
+                "name": "azer",
+                "saying": "azert",
+                "image": "testimonial/testimonial_1.png",
+                "alt_image": "testimonial_1"
+            },
+            {
+                "name": "لزهر ",
+                "saying": "دجح",
+                "image": "testimonial/testimonial_2.jpg",
+                "alt_image": "testimonial_2"
+            }
+        ]
+    },
+    "paid": {
+        "ar": [
+            {
+                "name": "الرهاب الاجتماعي",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "test.com",
+                "price": 123,
+                "image": "paid/شهادة_0.jpg",
+                "alt_image": "شهادة_0"
+            },
+            {
+                "name": "القلق العام",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "test.com",
+                "price": 123,
+                "image": "paid/شهادة_1.png",
+                "alt_image": "شهادة_1"
+            },
+            {
+                "name": "الوسواس القهري",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "test.com",
+                "price": 123,
+                "image": "paid/دورة_2.jpg",
+                "alt_image": "دورة_2"
+            }
+        ],
+        "en": [
+            {
+                "name": "الرهاب الاجتماعي",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "https://client.thebravespirit.org/clientCourseView/6256fd021c1587371cbb0658",
+                "price": 123,
+                "image": "paid/testimonial_0.jpg",
+                "alt_image": "testimonial_0"
+            },
+            {
+                "name": "القلق العام",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "test.com",
+                "price": 123,
+                "image": "paid/testimonial_1.png",
+                "alt_image": "testimonial_1"
+            },
+            {
+                "name": "الوسواس القهري",
+                "description": "هذه الدوره تتحدث عن كذا كذا كذا",
+                "link": "test.com",
+                "price": 123,
+                "image": "paid/paid_2.jpg",
+                "alt_image": "paid_2"
+            }
+        ]
+    },
+    "contact": {
+        "ar": {
+            "name": "الروح الشجاعة",
+            "description": "يرجى التواصل معنا على الخاص.",
+            "image": "contact/تواصل.jpg",
+            "alt_image": "تواصل"
+        },
+        "en": {
+            "name": "",
+            "description": "<p></p><div _ngcontent-ase-c4=\"\" class=\"col-7\" style=\"padding: 0px 7.5px; margin: 0px; box-sizing: border-box; font-family: AvenirArabic-Medium, sans-serif; outline: none !important; position: relative; width: 732.07px; min-height: 1px; flex: 0 0 58.3333%; max-width: 58.3333%; color: rgb(33, 37, 41); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><br></div><p></p><div _ngcontent-ase-c4=\"\" class=\"col-5 text-center d-flex align-items-center justify-content-center\" style=\"padding: 0px 7.5px; margin: 0px; box-sizing: border-box; font-family: AvenirArabic-Medium, sans-serif; outline: none !important; position: relative; width: 522.91px; min-height: 1px; flex: 0 0 41.6667%; max-width: 41.6667%; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; color: rgb(33, 37, 41); font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><div _ngcontent-ase-c4=\"\" class=\"\" style=\"padding: 0px; margin: 0px; box-sizing: border-box; font-family: AvenirArabic-Medium, sans-serif; outline: none !important; position: absolute; top: 235.859px; left: 261.445px; transform: translate(-50%, -50%); color: rgb(255, 255, 255);\"><p></p></div></div>",
+            "image": "contact/contact.jpg",
+            "alt_image": "contact"
+        }
+    },
+    "categories": {
+        "ar": [
+            {
+                "name": "نوبات الهلع / الذعر",
+                "image": "category/نوع_3.png",
+                "alt_image": "نوع_3"
+            },
+            {
+                "name": "الرهاب الاجتماعي",
+                "image": "category/نوع_4.png",
+                "alt_image": "نوع_4"
+            },
+            {
+                "name": "العارو عقدة الدونية /ضعف تقدير الذات",
+                "image": "category/نوع_5.png",
+                "alt_image": "نوع_5"
+            },
+            {
+                "name": "الاكتئاب",
+                "image": "category/نوع_6.png",
+                "alt_image": "نوع_6"
+            },
+            {
+                "name": "القلق العام /كثرة التفكير و الهم",
+                "image": "category/نوع_7.png",
+                "alt_image": "نوع_7"
+            },
+            {
+                "name": "اختلال الانية و تبدد الواقع ",
+                "image": "category/نوع_8.png",
+                "alt_image": "نوع_8"
+            },
+            {
+                "name": "الصدمات و جروح الطفولة",
+                "image": "category/نوع_9.png",
+                "alt_image": "نوع_9"
+            },
+            {
+                "name": "انواع الفوبيا المختلفة مثل رهاب الاماكن المغلقة",
+                "image": "category/نوع_10.png",
+                "alt_image": "نوع_10"
+            },
+            {
+                "name": "الخوف من الجنون / الخوف من الموت",
+                "image": "category/نوع_12.png",
+                "alt_image": "نوع_12"
+            },
+            {
+                "name": "الشعور بالذنب / التأنيب و جلد الذات",
+                "image": "category/نوع_13.png",
+                "alt_image": "نوع_13"
+            },
+            {
+                "name": "الخوف من الالقاء امام جمهور",
+                "image": "category/نوع_14.png",
+                "alt_image": "نوع_14"
+            },
+            {
+                "name": "عقدة المثالية / التأجيل",
+                "image": "category/نوع_15.png",
+                "alt_image": "نوع_15"
+            }
+        ],
+        "en": [
+            {
+                "name": "Panic attacks",
+                "image": "category/category_3.png",
+                "alt_image": "category_3"
+            },
+            {
+                "name": "social phobia",
+                "image": "category/category_4.png",
+                "alt_image": "category_4"
+            },
+            {
+                "name": "Shame and inferiority",
+                "image": "category/category_5.png",
+                "alt_image": "category_5"
+            },
+            {
+                "name": "depression",
+                "image": "category/category_6.png",
+                "alt_image": "category_6"
+            },
+            {
+                "name": "general anxeity",
+                "image": "category/category_7.png",
+                "alt_image": "category_7"
+            },
+            {
+                "name": "imbalance of the moment",
+                "image": "category/category_8.png",
+                "alt_image": "category_8"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_9.png",
+                "alt_image": "category_9"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_10.png",
+                "alt_image": "category_10"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_12.png",
+                "alt_image": "category_12"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_13.png",
+                "alt_image": "category_13"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_14.png",
+                "alt_image": "category_14"
+            },
+            {
+                "name": "TRAUMA",
+                "image": "category/category_15.png",
+                "alt_image": "category_15"
+            }
+        ]
+    },
+    "book": {
+        "ar": {
+            "description": "<p>حمل كتابي مجانا !</p>",
+            "file": "https://api.thebravespirit.org/public/banner/banner-607abda447ecb92dd731b1c9.jpg",
+            "cover": "book/غطاء_الكتاب.png",
+            "alt_cover": "غطاء_الكتاب"
+        },
+        "en": {
+            "description": "",
+            "file": "",
+            "cover": "book/book_cover.png",
+            "alt_cover": "book_cover"
+        }
+    },
+    "notes": {
+        "ar": [
+            {
+                "title": "المشاكل النفسية لا يجب ان تعيقك ، أنت تستحق ان تعيش حياتك بدون خوف . "
+            },
+            {
+                "title": "نحن نؤمن بان العلاج النفسي يجب ان يكون متاح للجميع ."
+            }
+        ],
+        "en": [
+            {
+                "title": "note 1 english"
+            },
+            {
+                "title": "note 2 english"
+            }
+        ]
+    },
+    "faqs": [
+        {
+            "questions": "question?",
+            "answers": "yes"
+        },
+        {
+            "questions": "سؤال؟",
+            "answers": "اجابة"
+        }
+    ]
+}

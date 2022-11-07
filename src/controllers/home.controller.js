@@ -1,6 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 const Joi = require("joi");
+const fsx = require('fs-extra');
+const srcDir = path.join(__dirname, "../../cppublic");
+const destDir = path.join(__dirname, "../../public");
+
 
 module.exports = {
     getHome: async (req, res) => {
@@ -29,14 +33,15 @@ module.exports = {
     },
     updateHome: async (req, res) => {
         try {
-            let body = JSON.parse(JSON.stringify(req.body));
+            let body = JSON.parse(JSON.stringify(req.body)); // take a copy of the body
 
             //body verification
             const bodyVerification = Joi.object()
                 .keys({
                     target: Joi.string().optional(),
                     content: Joi.any().required(),
-                    names: Joi.array().min(0).optional(),
+                    // names: Joi.array().min(0).optional(),
+                    names: Joi.any().optional(),
                 })
                 .validate(body);
             if (bodyVerification.error) {
@@ -98,8 +103,20 @@ module.exports = {
 
             return res.status(200).json({ message: "done" });
         } catch (error) {
-            return res.status(500).json({ error: error });
+            return res.status(500).json({ error });
         }
+    },
+    resetHome: async (req, res) => {
+        await fsx.copy(srcDir, destDir);
+        return res.status(200).json(
+            JSON.parse(
+                fs
+                    .readFileSync(
+                        path.join(__dirname, "../../public/home/home.json")
+                    )
+                    .toString()
+            )
+        );
     },
     getImage: async (req, res) => {
         try {
@@ -133,3 +150,7 @@ module.exports = {
         }
     },
 };
+
+
+
+// "{'ar':{'title':'أحصل على دعم نفسي شامل وتمتع بشعور أفضل','description':'<p>دورات تطبيقية لكي تتغلب على مخاوفك\\nوتنهي معاناتك النفسية.<br></p>','image':'banner/لافتة.jpg','alt_image':'لافتة'},'en':{'title':'test','description':null,'image':'banner/banner.jpg','alt_image':'banner'}}"

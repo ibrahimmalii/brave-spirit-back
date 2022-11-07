@@ -28,6 +28,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "formidable": "^1.2.6",
+    "fs-extra": "^10.1.0",
     "google-auth-library": "^7.14.1",
     "googleapis": "^100.0.0",
     "joi": "^17.6.0",
