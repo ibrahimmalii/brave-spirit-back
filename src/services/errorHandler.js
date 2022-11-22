@@ -12,10 +12,10 @@ module.exports = {
                             message: `${errorMessages[error.code]}${key}`,
                         });
                         break;
-                    } else
-                        return res.status(400).json({
-                            message: error,
-                        });
+                    } 
+                    return res.status(400).json({
+                        message: error,
+                    });
                 }
             else
                 return res.status(400).json({

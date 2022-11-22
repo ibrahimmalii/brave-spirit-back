@@ -69,9 +69,9 @@ const Course = createModel("Course", {
                         type: String,
                     },
                     attachments: [String],
-                },
-            ],
-        },
+                }
+            ]
+        }
     ],
     price: {
         euro: {
