@@ -8,6 +8,7 @@ const {
     getCourseDetailsAdmin,
     createCourse,
     updateCourse,
+    deleteCourse,
     publishUnpublishCourse,
     getCourseAttachments,
     getCourseCover,
@@ -31,5 +32,6 @@ router.get("/:id", checkToken, isAdmin, getCourseDetailsAdmin);
 router.post("/", formidable(), checkToken, isAdmin, createCourse);
 router.patch("/publish/:id", checkToken, isAdmin, publishUnpublishCourse);
 router.patch("/:id", formidable(), checkToken, isAdmin, updateCourse);
+router.delete("/:id", checkToken, isAdmin, deleteCourse);
 
 module.exports = router;

@@ -512,4 +512,44 @@ module.exports = {
             return res.status(500).json({ error: error });
         }
     },
+    deleteCourse: async (req, res) => {
+        try {
+            Course.findOne(
+                {
+                    _id: req.params.id,
+                },
+                async (error, course) => {
+                    if (error) {
+                        await errorHandler(req, res, error);
+                    }
+                    if (!course) {
+                        return res
+                            .status(404)
+                            .json({ error: "course not found" });
+                    }
+                    try{
+                        fs.rmdirSync(path.join(
+                            __dirname,
+                            `../../public/courses/${course._id}`
+                        ), {recursive: true});
+                        await Course.deleteOne(
+                            {
+                                _id: course._id,
+                            }
+                        );
+                    } catch (error) {
+                        return res
+                        .status(500)
+                        .json({ message: "The course can not be deleted." });
+                    }
+                    
+                    return res
+                        .status(200)
+                        .json({ message: "The course has beed deleted." });
+                }
+            );
+        } catch (error) {
+            return res.status(500).json({ error: error });
+        }
+    }
 };

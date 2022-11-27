@@ -2,6 +2,7 @@ const Joi = require("joi");
 const { Course } = require("../models");
 const fs = require("fs");
 const path = require("path");
+const { optional } = require("joi");
 
 module.exports = {
     verifyBodyCreation: async (body) => {
@@ -20,6 +21,7 @@ module.exports = {
                     en: Joi.string().allow(null, "").optional(),
                 }).required(),
                 cover: Joi.string().required(),
+                // cover: Joi.optional(),
                 images: Joi.array()
                     .items(Joi.string())
                     .allow(null, "")
