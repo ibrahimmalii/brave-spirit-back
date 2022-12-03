@@ -9,7 +9,7 @@ module.exports = {
         try {
             Course.find(
                 {},
-                { name: 1, published: 1 },
+                { name: 1, published: 1, get_free: 1 },
                 async (error, courses) => {
                     if (error) {
                         await errorHandler(req, res, error);
@@ -217,7 +217,17 @@ module.exports = {
                         }
                     );
                 } else {
-                    await Course.remove({ _id: course._id });
+                    try{
+                        fs.rmdirSync(path.join(
+                            __dirname,
+                            `../../public/courses/${course._id}`
+                        ), {recursive: true});
+                        await Course.remove({ _id: course._id });
+                    } catch (error) {
+                        return res
+                        .status(500)
+                        .json({ message: "The course can not be deleted." });
+                    }
                     return res
                         .status(400)
                         .json({ error: "The cover file is missing" });
@@ -378,18 +388,35 @@ module.exports = {
                     { _id: req.params.id },
                     { published: !course.published }
                 );
-                if (course.published) {
-                    return res
+                let message = course.published ? "Course unpublished successfully" : "Course published successfully";
+                return res
                         .status(200)
-                        .json({ message: "Course unpublished successfully" });
-                } else {
-                    return res
-                        .status(200)
-                        .json({ message: "Course published successfully" });
-                }
+                        .json({ message});
             });
         } catch (error) {
             return res.status(500).json({ error: error });
+        }
+    },
+    freeOrPaidCourse: async (req, res) => {
+        try {
+            Course.findOne({_id: req.params.id}, async (error, course) => {
+                if (error) {
+                    await errorHandler(req, res, error);
+                }
+                if (!course) {
+                    return res.status(404).json({ error: "Course not found" });
+                }
+                await Course.updateOne(
+                    {_id: req.params.id},
+                    {get_free: !course.get_free}
+                );
+                let message = course.get_free ? "Course can't get for free" : "Course can get for free";
+                return res
+                        .status(200)
+                        .json({ message});
+            })
+        } catch (error) {
+            return res.status(500).json({ error });
         }
     },
     getCourseAttachments: async (req, res) => {

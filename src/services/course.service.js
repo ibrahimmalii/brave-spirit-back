@@ -63,6 +63,7 @@ module.exports = {
                 }).required(),
                 discount: Joi.number().optional(),
                 published: Joi.boolean().optional(),
+                get_free: Joi.boolean().optional(),
             })
             .validate(body);
 
@@ -202,6 +203,7 @@ module.exports = {
                 }).required(),
                 discount: Joi.number().optional(),
                 published: Joi.boolean().optional(),
+                get_free: Joi.boolean().optional(),
             })
             .validate(body);
 

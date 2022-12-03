@@ -14,6 +14,7 @@ const {
     getCourseCover,
     getCourseImage,
     getCourseAttachmentsAdmin,
+    freeOrPaidCourse
 } = require("../controllers/course.controller");
 const { checkToken, isAdmin } = require("../middlewares/Authorization");
 const formidable = require("../middlewares/Formidable");
@@ -27,10 +28,12 @@ router.get("/image/:id/:file", getCourseImage);
 router.get("/public/:id", getCourseDetailsPublic);
 router.get("/user/:id", checkToken, getCourseDetailsUser);
 router.get("/user/attachment/:id/:file", checkToken, getCourseAttachments);
-router.get("/attachment/:id/:file", checkToken, isAdmin, getCourseAttachmentsAdmin);
+// router.get("/attachment/:id/:file", checkToken, isAdmin, getCourseAttachmentsAdmin);
+router.get("/attachment/:id/:file", getCourseAttachmentsAdmin);
 router.get("/:id", checkToken, isAdmin, getCourseDetailsAdmin);
 router.post("/", formidable(), checkToken, isAdmin, createCourse);
 router.patch("/publish/:id", checkToken, isAdmin, publishUnpublishCourse);
+router.patch("/paidOrFree/:id", checkToken, isAdmin, freeOrPaidCourse);
 router.patch("/:id", formidable(), checkToken, isAdmin, updateCourse);
 router.delete("/:id", checkToken, isAdmin, deleteCourse);
 

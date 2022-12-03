@@ -95,6 +95,10 @@ const Course = createModel("Course", {
         type: Boolean,
         default: false,
     },
+    get_free: {
+        type: Boolean,
+        default: false
+    }
 });
 
 module.exports = {
