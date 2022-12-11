@@ -21,7 +21,6 @@ module.exports = {
                     en: Joi.string().allow(null, "").optional(),
                 }).required(),
                 cover: Joi.string().required(),
-                // cover: Joi.optional(),
                 images: Joi.array()
                     .items(Joi.string())
                     .allow(null, "")
@@ -161,7 +160,7 @@ module.exports = {
                     ar: Joi.string().required(),
                     en: Joi.string().allow(null, "").optional(),
                 }).required(),
-                cover: Joi.string().required(),
+                cover: Joi.string().optional(),
                 images: Joi.array()
                     .items(Joi.string())
                     .allow(null, "")

@@ -118,6 +118,18 @@ module.exports = {
             )
         );
     },
+    setAsDefault: async (req, res) => {
+        await fsx.copy(destDir, srcDir);
+        return res.status(200).json(
+            JSON.parse(
+                fs
+                    .readFileSync(
+                        path.join(__dirname, "../../public/home/home.json")
+                    )
+                    .toString()
+            )
+        );
+    },
     getImage: async (req, res) => {
         try {
             if (
