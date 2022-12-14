@@ -524,18 +524,16 @@ module.exports = {
                     if (!user) {
                         res.status(404).json({ error: "User not found" });
                     }
-                    return res.sendFile(
-                        path.join(
-                            __dirname,
-                            `../../public/users/${user?.image}`
-                        ),
-                        (error) => {
-                            if (error) {
-                                return res.status(500).json({ error: error });
-                            }
-                        }
-                    );
-
+                    try {
+                        return res.sendFile(
+                            path.join(
+                                __dirname,
+                                `../../public/users/${user?.image}`
+                                )
+                        );
+                    } catch (error) {
+                        return res.status(500).json({ error });
+                    }
 
                 }
             );
