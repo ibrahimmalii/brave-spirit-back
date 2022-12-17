@@ -9,14 +9,13 @@ module.exports = {
         try {
             Course.find(
                 {},
-                { name: 1, published: 1, get_free: 1 },
                 async (error, courses) => {
                     if (error) {
                         await errorHandler(req, res, error);
                     }
                     return res.status(200).json(courses);
                 }
-            );
+            ).select('name published get_free price');
         } catch (error) {
             return res.status(500).json({ error: error });
         }
@@ -127,6 +126,7 @@ module.exports = {
                         },
                     },
                     discount: 1,
+                    get_free: 1
                 }
             );
             if (!course) {

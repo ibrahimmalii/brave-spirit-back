@@ -8,8 +8,7 @@ const { cipherDecrypt } = require("../services/crypto.service");
 module.exports = {
     getSubscriptions: async (req, res) => {
         try {
-            // find all subscriptions that have the state completed and Declined
-            // because the received state is for the requests
+
             Subscription.find(
                 { $or: [{ state: "completed" }, { state: "error" }] },
                 async (error, subscriptions) => {
@@ -18,9 +17,11 @@ module.exports = {
                     }
                     return res.status(200).json(subscriptions);
                 }
-            );
+            )
+            .select('method state price')
+            .populate('course', 'name price').populate('user', 'email firstname');
         } catch (error) {
-            return res.status(500).json({ error: error });
+            return res.status(500).json({ error });
         }
     },
     getSubscriptionsUser: async (req, res) => {
@@ -54,9 +55,12 @@ module.exports = {
                     }
                     return res.status(200).json(subscriptions);
                 }
-            );
+            )
+            .select('price request method state')
+            .populate('user', 'email firstname')
+            .populate('course', 'name');
         } catch (error) {
-            return res.status(500).json({ error: error });
+            return res.status(500).json({ error });
         }
     },
     getRequestsUser: async (req, res) => {
@@ -181,7 +185,7 @@ module.exports = {
             }
             //get the price from the course and calculate it with the discount if it exists
             body.price = {};
-            if (course.discount > 0) {
+            if (course.discount) {
                 body.price.euro =
                     course.price.euro -
                     (course.price.euro * course.discount) / 100;

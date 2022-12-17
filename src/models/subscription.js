@@ -6,13 +6,13 @@ const Subscription = createModel("Subscription", {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         required: true,
-        autopopulate: true,
+        autopopulate: false,
     },
     course: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course",
         required: true,
-        autopopulate: true,
+        autopopulate: false,
     },
     price: {
         euro: {
@@ -54,6 +54,7 @@ const Subscription = createModel("Subscription", {
         required: true,
     },
 });
+
 
 module.exports = {
     Subscription,

@@ -537,6 +537,8 @@ module.exports = {
 
                 }
             );
-        } catch (error) {}
+        } catch (error) {
+            return res.status(500).json({ error });
+        }
     },
 };
