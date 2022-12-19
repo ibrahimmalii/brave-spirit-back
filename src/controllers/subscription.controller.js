@@ -303,7 +303,6 @@ module.exports = {
                             error: "Request not found or has been already confirmed or declined",
                         });
                     }
-                    console.log(subscription.request.type === "cib");
                     if (subscription.request.type === "cib") {
                         await Subscription.updateOne(
                             { _id: subscription._id },
@@ -321,16 +320,22 @@ module.exports = {
                             }
                         );
                     }
+                    console.log(subscription);
                     //send confimation email
-                    let msg = `<span>   الدورة ${subscription.course.name.ar} متاحة الآن في حسابك</span>`;
-                    sendMail(subscription.user.email, msg, "Request Confirmed");
-                    return res.status(200).json({
-                        message: "Request confirmed successfully",
-                    });
+                    // try {
+                    //     let msg = `<span>   الدورة ${subscription.course.name?.ar} متاحة الآن في حسابك</span>`;
+                    //     sendMail(subscription.user.email, msg, "Request Confirmed");
+                    //     return res.status(200).json({
+                    //         message: "Request confirmed successfully",
+                    //     });
+                    // } catch (error) {
+                    //     throw new Error(error.message);
+                    // }
+                    
                 }
-            );
+            ).populate('course name').populate('user email');
         } catch (error) {
-            return res.status(500).json({ error: error });
+            return res.status(500).json({ error });
         }
     },
     declineSubscriptionRequest: async (req, res) => {
@@ -353,13 +358,19 @@ module.exports = {
                         }
                     );
                     //send confimation email
-                    let msg = `<span>للأسف ، قررنا رفض طلبك للدورة ${subscription.course.name.ar}.لأن السبب الذي قدمته لم يكن مقنعًا لنا</span>`;
-                    sendMail(subscription.user.email, msg, "Request Declined");
-                    return res.status(200).json({
-                        message: "Request declined successfully",
-                    });
+                    // try {
+                    //     let msg = `<span>للأسف ، قررنا رفض طلبك للدورة ${subscription.course.name.ar}.لأن السبب الذي قدمته لم يكن مقنعًا لنا</span>`;
+                    //     sendMail(subscription.user.email, msg, "Request Declined");
+                    //     return res.status(200).json({
+                    //         message: "Request declined successfully",
+                    //     });
+                    // } catch (error) {
+                    //     console.log(error);
+                    //     return res.status(500).json({error});
+                    // }
+                    
                 }
-            );
+            ).populate('course name').populate('user email');
         } catch (error) {
             return res.status(500).json({ error: error });
         }

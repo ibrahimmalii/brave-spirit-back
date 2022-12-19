@@ -4,6 +4,8 @@ const cors = require("cors");
 const compression = require("compression");
 const app = express().use("*", cors());
 
+const {sendMail} = require('./src/services/mail.service');
+
 app.use(compression());
 
 app.get("/", (req, res) => {
@@ -21,6 +23,7 @@ app.use(express.json());
 
 //DB Connection
 require("./configs/db").connection();
+
 
 //Routes
 const routes = require("./src/routes/index");

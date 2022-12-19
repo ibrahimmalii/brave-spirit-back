@@ -28,42 +28,48 @@ oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 module.exports = {
     sendMail: async (to, code, subject) => {
-        const accessToken = await oAuth2Client.getAccessToken();
+        try {
+            // const accessToken = await oAuth2Client.getAccessToken();
 
-        const transporter = nodemailer.createTransport({
-            service: "gmail",
-            secure: true,
-            auth: {
-                type: "OAuth2",
-                user: process.env.MAIL_USER,
-                clientId: CLIENT_ID,
-                clientSecret: CLIENT_SECRET,
-                refreshToken: REFRESH_TOKEN,
-                accessToken: accessToken,
-            },
-            tls: {
-                rejectUnauthorized: false,
-            },
-        });
-        transporter.verify(function (error, success) {
-            if (error) {
-                console.log("Email Transporter :: error verifying the connection", {
-                    error: `${error.toString()}`,
-                });
-            }
-            console.log("Email Transporter :: server is ready to send emails");
-        });
-        const template = fs.readFileSync(
-            path.join(__dirname, "../../public/mail/template.html"),
-            "utf8"
-        );
-        let template_content = template.replace("subject", code);
-
-        return transporter.sendMail({
-            to: to,
-            from: process.env.MAIL_USER,
-            html: template_content,
-            subject: subject,
-        });
+            const transporter = nodemailer.createTransport({
+                service: "gmail",
+                secure: true,
+                auth: { 
+                    type: "OAuth2",
+                    user: process.env.MAIL_USER,
+                    clientId: CLIENT_ID,
+                    clientSecret: CLIENT_SECRET,
+                    refreshToken: REFRESH_TOKEN,
+                    // accessToken: accessToken,
+                },
+                tls: {
+                    rejectUnauthorized: false,
+                },
+            });
+            transporter.verify(function (error, success) {
+                if (error) {
+                    console.log("Email Transporter :: error verifying the connection", {
+                        error: `${error.toString()}`,
+                    });
+                }
+                console.log("Email Transporter :: server is ready to send emails");
+            });
+            const template = fs.readFileSync(
+                path.join(__dirname, "../../public/mail/template.html"),
+                "utf8"
+            );
+            let template_content = template.replace("subject", code);
+    
+            return transporter.sendMail({
+                to: to,
+                from: process.env.MAIL_USER,
+                html: template_content,
+                subject: subject,
+            });
+        } catch (error) {
+            console.log(error);
+            throw new Error(error);
+        }
+        
     },
 };
