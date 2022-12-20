@@ -320,7 +320,9 @@ module.exports = {
                             }
                         );
                     }
-                    console.log(subscription);
+                    return res.status(200).json({
+                        message: "Request confirmed successfully",
+                    });
                     //send confimation email
                     // try {
                     //     let msg = `<span>   الدورة ${subscription.course.name?.ar} متاحة الآن في حسابك</span>`;
@@ -333,7 +335,7 @@ module.exports = {
                     // }
                     
                 }
-            ).populate('course name').populate('user email');
+            ).populate('course', 'name').populate('user', 'email');
         } catch (error) {
             return res.status(500).json({ error });
         }
@@ -357,6 +359,9 @@ module.exports = {
                             state: "declined",
                         }
                     );
+                    return res.status(200).json({
+                        message: "Request declined successfully",
+                    });
                     //send confimation email
                     // try {
                     //     let msg = `<span>للأسف ، قررنا رفض طلبك للدورة ${subscription.course.name.ar}.لأن السبب الذي قدمته لم يكن مقنعًا لنا</span>`;
@@ -370,7 +375,7 @@ module.exports = {
                     // }
                     
                 }
-            ).populate('course name').populate('user email');
+            ).populate('course', 'name').populate('user', 'email');
         } catch (error) {
             return res.status(500).json({ error: error });
         }

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-console.log(`${process.env.DB_ROOT}://${process.env.DB_HOST}/${process.env.DB_NAME}`)
+// console.log(`${process.env.DB_ROOT}://${process.env.DB_HOST}/${process.env.DB_NAME}`)
 async function connection() {
     await mongoose
         .connect(
