@@ -4,6 +4,7 @@ const { errorHandler } = require("../services/errorHandler");
 const fs = require("fs");
 const path = require("path");
 
+
 module.exports = {
     getCourses: async (req, res) => {
         try {
@@ -542,6 +543,7 @@ module.exports = {
         }
     },
     deleteCourse: async (req, res) => {
+
         try {
             Course.findOne(
                 {
@@ -557,21 +559,31 @@ module.exports = {
                             .json({ error: "course not found" });
                     }
                     try{
-                        fs.rmdirSync(path.join(
-                            __dirname,
-                            `../../public/courses/${course._id}`
-                        ), {recursive: true});
+                        
                         await Course.deleteOne(
                             {
                                 _id: course._id,
                             }
                         );
+
+                        await Subscription.deleteMany(
+                            {
+                                course: course._id
+                            }
+                        );
+
+                        fs.rmdirSync(path.join(
+                            __dirname,
+                            `../../public/courses/${course._id}`
+                        ), {recursive: true});
+
+                        
                     } catch (error) {
                         return res
                         .status(500)
                         .json({ message: "The course can not be deleted." });
                     }
-                    
+
                     return res
                         .status(200)
                         .json({ message: "The course has beed deleted." });

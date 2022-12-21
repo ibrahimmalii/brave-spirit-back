@@ -1,13 +1,14 @@
 const mongoose = require("mongoose");
 // console.log(`${process.env.DB_ROOT}://${process.env.DB_HOST}/${process.env.DB_NAME}`)
 async function connection() {
-    await mongoose
+    return mongoose
         .connect(
             `${process.env.DB_ROOT}://${process.env.DB_HOST}/${process.env.DB_NAME}`
         )
-        .then(() => {
+        .then((res) => {
             //in case of successful connection
             console.log("MongoDB connection Success !!!")
+            res.startSession();
         })
         .catch((error) => {
             console.log("Database connection error : ", error);

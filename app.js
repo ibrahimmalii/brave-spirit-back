@@ -4,6 +4,7 @@ const cors = require("cors");
 const compression = require("compression");
 const app = express().use("*", cors());
 
+
 const {sendMail} = require('./src/services/mail.service');
 
 app.use(compression());
@@ -14,6 +15,7 @@ app.get("/", (req, res) => {
         Description: "test version",
     });
 });
+
 
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }));
@@ -31,6 +33,7 @@ app.use("/", routes);
 
 // Run the server
 const port = process.env.PORT || 4000;
-app.listen(port, () => {
+app.listen(port, async () => {
     console.log("server up and running on PORT :", port);
 });
+
