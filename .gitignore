@@ -1,4 +1,4 @@
 /node*
-.env
+# .env
 
-cp*
+# cp*
