@@ -9,7 +9,8 @@ const {sendMail} = require('./src/services/mail.service');
 
 app.use(compression());
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
+    await sendMail('hemamessi47@gmail.com', "welcom again from brave", "Generated Password Email");
     return res.status(200).json({
         name: "The brave spirit API",
         Description: "test version",

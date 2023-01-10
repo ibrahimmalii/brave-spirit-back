@@ -70,7 +70,7 @@ module.exports = {
             Subscription.find(
                 {
                     user: req.decode._id,
-                    $or: [{ state: "received" }, { state: "declined" }],
+                    // $or: [{ state: "received" }, { state: "declined" }],
                 },
                 async (error, subscriptions) => {
                     if (error) {
@@ -323,16 +323,16 @@ module.exports = {
                     return res.status(200).json({
                         message: "Request confirmed successfully",
                     });
-                    //send confimation email
-                    // try {
-                    //     let msg = `<span>   الدورة ${subscription.course.name?.ar} متاحة الآن في حسابك</span>`;
-                    //     sendMail(subscription.user.email, msg, "Request Confirmed");
-                    //     return res.status(200).json({
-                    //         message: "Request confirmed successfully",
-                    //     });
-                    // } catch (error) {
-                    //     throw new Error(error.message);
-                    // }
+                    // send confimation email
+                    try {
+                        let msg = `<span>   الدورة ${subscription.course.name?.ar} متاحة الآن في حسابك</span>`;
+                        await sendMail(subscription.user.email, msg, "Request Confirmed");
+                        return res.status(200).json({
+                            message: "Request confirmed successfully",
+                        });
+                    } catch (error) {
+                        throw new Error(error.message);
+                    }
                     
                 }
             ).populate('course', 'name').populate('user', 'email');
